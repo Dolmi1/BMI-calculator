@@ -1,0 +1,3 @@
+[submodule "vendor/official_joke_api"]
+	path = vendor/official_joke_api
+	url = https://github.com/15Dkatz/official_joke_api
