@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: official-joke-api-from-bmi
+    env: node
+    repo: Dolmi1/BMI-calculator
+    branch: main
+    root: vendor/official_joke_api
+    buildCommand: git submodule update --init --recursive && npm install
+    startCommand: npm start
