@@ -5,5 +5,6 @@ services:
     repo: Dolmi1/BMI-calculator
     branch: main
     root: vendor/official_joke_api
-    buildCommand: git submodule update --init --recursive && npm install
-    startCommand: npm start
+    # Be explicit so Render always runs commands in the correct directory
+    buildCommand: git submodule update --init --recursive && cd vendor/official_joke_api && npm install
+    startCommand: cd vendor/official_joke_api && npm start
